@@ -1,11 +1,18 @@
-     
 require 'sinatra'
+require 'bcrypt'
+
+enable :sessions
+
+require './db/db'
+
+require './helpers/sessions_helper'
+
+require './models/user'
+
+require './controllers/users_controller'
+require './controllers/sessions_controller'
+require './controllers/agents_controller'
 
 get '/' do
-  erb :index
+  redirect '/val_agents'
 end
-
-
-
-
-
