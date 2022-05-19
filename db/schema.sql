@@ -4,6 +4,7 @@ CREATE DATABASE valorant_db;
 CREATE TABLE agents(
     id SERIAL PRIMARY KEY,
     name TEXT,
+    description TEXT,
     image_url TEXT,
     role TEXT,
     is_playable BOOLEAN,
