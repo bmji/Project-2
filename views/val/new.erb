@@ -1,5 +1,8 @@
 <h1>Agent Notes</h1>
-<form action="/new_note" method="POST">
+<form action="/note" method="POST">
+    <input type="hidden" name="_method" value="put">
+    <input type="hidden" name="note_id" value="<%= note_id %>">
+
     <label for="">Note</label>
     <input type="text" name="note">
 

@@ -11,6 +11,9 @@ def run_sql(sql, params = [])
 end
 
 info = val_api['data']
+
+# for agents table
+
 agent_name = []
 agent_desc = []
 agent_image_url = []
@@ -33,6 +36,8 @@ agent_name.each_index do |i|
     run_sql("INSERT INTO agents (name, description, image_url, full_portrait, role, voiceline) VALUES ($1, $2, $3, $4, $5, $6)", [agent_name[i], agent_desc[i], agent_image_url[i], agent_full_portrait[i], agent_role[i], agent_voiceline[i]])
 end
 
+for agent_abilities table
+
 agent_id = [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 11, 11, 11, 11, 12, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 15, 15, 15, 15, 16, 16, 16, 16, 17, 17, 17, 17, 18, 18, 18, 18, 19, 19, 19, 19]
 ab_name = []
 ab_desc = []
@@ -50,4 +55,12 @@ end
 
 agent_id.each_index do |i|
     run_sql("INSERT INTO agent_abilities (agent_id, name, description, image_icon) VALUES ($1, $2, $3, $4)", [agent_id[i], ab_name[i], ab_desc[i], ab_image_icon[i]])
+end
+
+# for notes table
+
+agent_id = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,]
+
+agent_id.each_index do |i|
+    run_sql("INSERT INTO agent_notes (agent_id) VALUES ($1)", [agent_id[i]])
 end

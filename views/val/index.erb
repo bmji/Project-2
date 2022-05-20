@@ -20,20 +20,30 @@
     <% val_agents.each do |agent| %>
         <div class="agent_button">
             <h2><%= agent['name'] %></h2>
-            <img src="<%= agent['image_url'] %>" alt="icon.png">
+            <a href="#"><img class="agent-img" src="<%= agent['image_url'] %>" alt="icon.png"></a>
         </div>
-        <a href="/add_note">Add note</a>
+
+        <% agent_notes.each do |note| %>
+            <% if note['agent_id'] == agent['id'] %>
+                <% if note['notes'] == nil %>
+                    <a href="/add_note?note_id=<%= note['id'] %>">Add note</a>
+                <% else %>
+                    <p><strong>Note: </strong><%= note['notes'] %></p>
+                    <p><strong>Tier List: </strong><%= note['tier'] %></p>
+
+                    <a href="/note/<%= note['id'] %>/edit">Edit</a>
+
+                    <form action="/note/<%= note['id'] %>" method="POST">
+                        <input type="hidden" name="_method" value="delete">
+
+                        <button>Delete</button>
+                    </form
+                <% end %>
+
+            <% end %>
+
+        <% end %>
+
     <% end %>
-    <% agent_notes.each do |note| %>
-        <p><strong>Note: </strong><%= note['notes'] %></p>
-        <p><strong>Tier List: </strong><%= note['tier'] %></p>
-
-        <a href="/note/<%= note['id'] %>/edit">Edit</a>
-
-        <form action="/note/<%= note['id'] %>" method="POST">
-            <input type="hidden" name="_method" value="delete">
-
-            <button>Delete</button>
-        </form>
-    <% end %>
+    
 <% end %>

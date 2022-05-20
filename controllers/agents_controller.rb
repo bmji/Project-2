@@ -1,7 +1,7 @@
 get '/val_agents' do
     val_agents = all_agents
-    agent_notes = all_notes
-
+    agent_notes = all_notes.to_a
+# binding.pry
     erb :'val/index', locals: {
         val_agents: val_agents,
         agent_notes: agent_notes
@@ -9,14 +9,19 @@ get '/val_agents' do
 end
 
 get '/add_note' do
-    erb :'/val/new'
+    note_id = params['note_id']
+
+    erb :'/val/new', locals: {
+        note_id: note_id
+    }
 end
 
-post '/new_note' do
+put '/note' do
     note = params['note']
     tier = params['tier']
+    note_id = params['note_id']
 
-    add_note(note, tier)
+    add_note(note, tier, note_id)
 
     redirect '/'
 end

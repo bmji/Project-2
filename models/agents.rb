@@ -6,8 +6,8 @@ def all_notes
     run_sql("SELECT * FROM agent_notes ORDER BY id")
 end
 
-def add_note(note, tier)
-    run_sql("INSERT INTO agent_notes (notes, tier) VALUES ($1, $2)", [note, tier])
+def add_note(note, tier, note_id)
+    run_sql("UPDATE agent_notes SET notes = $1, tier = $2 WHERE id = $3", [note, tier, note_id])
 end
 
 def get_note(id)

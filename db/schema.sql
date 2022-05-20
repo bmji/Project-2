@@ -21,6 +21,7 @@ CREATE TABLE agent_abilities(
 
 CREATE TABLE agent_notes(
     id SERIAL PRIMARY KEY,
+    agent_id INT,
     notes TEXT,
     tier TEXT
 );
