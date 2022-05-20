@@ -1,0 +1,12 @@
+<h1>Edit Notes</h1>
+<form action="/note/<%= note['id'] %>/edit" method="POST">
+    <input type="hidden" name="_method" value="put">
+
+    <label for="">Note</label>
+    <input type="text" name="note" value="<%= note['notes']%>">
+
+    <label for="">Tier List</label>
+    <input type="text" name="tier" value="<%= note['tier'] %>">
+
+    <button>Edit</button>
+</form>

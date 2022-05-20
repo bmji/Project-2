@@ -1,4 +1,4 @@
-<h1>Valorant Agent Roster</h1>
+<h1>Valorant Roster</h1>
 
 <% if logged_in? %>
     <h2><%= current_user['name'] %></h2>
@@ -8,7 +8,32 @@
 
         <button>Log Out</button>
     </form>
+
+    <h1>Agents</h1>
+
 <% else %>
     <a href="/sign_up">Sign up</a>
     <a href="/login">Sign in</a>
+
+    <h1>Agents</h1>
+    
+    <% val_agents.each do |agent| %>
+        <div class="agent_button">
+            <h2><%= agent['name'] %></h2>
+            <img src="<%= agent['image_url'] %>" alt="icon.png">
+        </div>
+        <a href="/add_note">Add note</a>
+    <% end %>
+    <% agent_notes.each do |note| %>
+        <p><strong>Note: </strong><%= note['notes'] %></p>
+        <p><strong>Tier List: </strong><%= note['tier'] %></p>
+
+        <a href="/note/<%= note['id'] %>/edit">Edit</a>
+
+        <form action="/note/<%= note['id'] %>" method="POST">
+            <input type="hidden" name="_method" value="delete">
+
+            <button>Delete</button>
+        </form>
+    <% end %>
 <% end %>

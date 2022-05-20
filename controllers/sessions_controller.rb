@@ -12,8 +12,12 @@ post '/sessions' do
         session['user_id'] = user['id']
         redirect '/'
     else
-        "sorry no such user"
+        redirect '/false_session'
     end
+end
+
+get '/false_session' do
+    erb :'/sessions/redirect'
 end
 
 delete '/sessions' do

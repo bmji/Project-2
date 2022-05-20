@@ -6,16 +6,23 @@ CREATE TABLE agents(
     name TEXT,
     description TEXT,
     image_url TEXT,
+    full_portrait TEXT,
     role TEXT,
-    is_playable BOOLEAN,
     voiceline TEXT
 );
 
-CREATE TABLE agent_abilites(
+CREATE TABLE agent_abilities(
     id SERIAL PRIMARY KEY,
+    agent_id INT,
     name TEXT,
     description TEXT,
     image_icon TEXT
+);
+
+CREATE TABLE agent_notes(
+    id SERIAL PRIMARY KEY,
+    notes TEXT,
+    tier TEXT
 );
 
 CREATE TABLE users(
@@ -25,3 +32,6 @@ CREATE TABLE users(
 )
 
 ALTER TABLE users ADD COLUMN password_digest TEXT;
+
+UPDATE agents SET image_url = 'https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayiconsmall.png'
+WHERE id = 4;
