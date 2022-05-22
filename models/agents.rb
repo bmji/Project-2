@@ -23,5 +23,5 @@ def update_note(note, tier, id)
 end
 
 def delete_note(id)
-    run_sql("DELETE FROM agent_notes WHERE id = $1", [id])
+    run_sql("UPDATE agent_notes SET notes = NULL, tier = NULL WHERE id = $1", [id])
 end
