@@ -1,7 +1,7 @@
 get '/val_agents' do
     val_agents = all_agents
     agent_notes = all_notes.to_a
-# binding.pry
+
     erb :'val/index', locals: {
         val_agents: val_agents,
         agent_notes: agent_notes
@@ -9,10 +9,14 @@ get '/val_agents' do
 end
 
 get '/add_note' do
+    agent_id = params['agent_id']
     note_id = params['note_id']
 
+    agent = get_agent_id(agent_id)
+
     erb :'/val/new', locals: {
-        note_id: note_id
+        note_id: note_id,
+        agent: agent
     }
 end
 
@@ -28,11 +32,14 @@ end
 
 get '/note/:id/edit' do
     id = params['id']
-
+    agent_id = params['agent_id']
+    
+    agent = get_agent_id(agent_id)
     note = get_note(id)
 
     erb :'/val/edit', locals: {
-        note: note
+        note: note,
+        agent: agent
     }
 end
 

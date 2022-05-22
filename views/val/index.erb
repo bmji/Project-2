@@ -1,49 +1,113 @@
-<h1>Valorant Roster</h1>
-
 <% if logged_in? %>
-    <h2><%= current_user['name'] %></h2>
 
-    <form action="/sessions" method="POST">
-        <input type="hidden" name="_method" value="delete">
+    <div class="log-display">
+        <h2 class="user-log">Logged in as <span class="user-name"><%= current_user['name'] %></span></h2>
 
-        <button>Log Out</button>
-    </form>
+        <form action="/sessions" method="POST">
+            <input type="hidden" name="_method" value="delete">
 
-    <h1>Agents</h1>
+            <button class="log-out-button">Log Out</button>
+        </form>
 
-<% else %>
-    <a href="/sign_up">Sign up</a>
-    <a href="/login">Sign in</a>
-
-    <h1>Agents</h1>
+    </div>
     
+    <div class="homepage-bg">
+        <video autoplay muted loop id="bg-video">
+        <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt29d7c4f6bc077e9e/5eb26f54402b8b4d13a56656/agent-background-generic.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <% val_agents.each do |agent| %>
-        <div class="agent_button">
-            <h2><%= agent['name'] %></h2>
-            <a href="#"><img class="agent-img" src="<%= agent['image_url'] %>" alt="icon.png"></a>
-        </div>
+    
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample<%= agent['id'] %>" aria-expanded="false" aria-controls="collapseExample">
+            <h2 class="agent-name"><%= agent['name'] %></h2>
+        </button>
 
         <% agent_notes.each do |note| %>
             <% if note['agent_id'] == agent['id'] %>
-                <% if note['notes'] == nil %>
-                    <a href="/add_note?note_id=<%= note['id'] %>">Add note</a>
+                <% if note['notes'] == nil || note['notes'] == ''%>
+                    
+                    <div class="collapse" id="collapseExample<%= agent['id'] %>" data-parent="#myGroup">
+                        <div class="card card-body">
+                            <img src="<%= agent['full_portrait'] %>" alt="">
+                            <div class="agent-profile">
+                                <p class="role-title">// Role</p> <br>
+                                <p class="role-name"><%= agent['role'] %></p> <br>
+                                <p class="desc-title">// Biography</p> <br>
+                                <p class="desc"><%= agent['description'] %></p> <br>
+                                <audio src="<%= agent['voiceline'] %>" controls>
+                                Your browser does not support the audio tag.
+                                </audio> <br>
+                                <a class="add-note" href="/add_note?note_id=<%= note['id'] %>&agent_id=<%= agent['id'] %>">Add note</a>  
+                            </div>
+                        </div>
+                    </div>
                 <% else %>
-                    <p><strong>Note: </strong><%= note['notes'] %></p>
-                    <p><strong>Tier List: </strong><%= note['tier'] %></p>
+                    <div class="collapse" id="collapseExample<%= agent['id'] %>" data-parent="#myGroup">
+                        <div class="card card-body">
+                            <img src="<%= agent['full_portrait'] %>" alt="">
+                            <div class="agent-profile">
+                                <p class="role-title">// Role</p> <br>
+                                <p class="role-name"><%= agent['role'] %></p><br>
+                                <p class="desc-title">// Biography </p> <br>
+                                <p class="desc"><%= agent['description'] %></p>
+                                <audio src="<%= agent['voiceline'] %>" controls>
+                                Your browser does not support the audio tag.
+                                </audio> <br>
 
-                    <a href="/note/<%= note['id'] %>/edit">Edit</a>
+                                <p class="n-name">// Notes</p>
+                                <p class="n-text"><%= note['notes'] %></p>
+                                <p class="t-name">//Tier List</p>
+                                <p class="t-text"><%= note['tier'] %></p>
 
-                    <form action="/note/<%= note['id'] %>" method="POST">
-                        <input type="hidden" name="_method" value="delete">
+                                <div class="two-buttons">
+                                    <a class="edit-button" href="/note/<%= note['id'] %>/edit?agent_id=<%= agent['id'] %>">Edit</a>
 
-                        <button>Delete</button>
-                    </form
+                                    <form action="/note/<%= note['id'] %>" method="POST">
+                                        <input type="hidden" name="_method" value="delete">
+
+                                        <button class="delete-button">Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <% end %>
-
             <% end %>
-
         <% end %>
+    <% end %>
 
+<% else %>
+
+    <ul class="sign">
+        <li><a class="sign-up" href="/sign_up">Sign up</a></li>
+        <li><a class="sign-in" href="/login">Sign in</a></li>
+    </ul>
+
+    <div class="homepage-bg">
+        <video autoplay muted loop id="bg-video">
+        <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt29d7c4f6bc077e9e/5eb26f54402b8b4d13a56656/agent-background-generic.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <% val_agents.each do |agent| %>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample<%= agent['id'] %>" aria-expanded="false" aria-controls="collapseExample">
+            <h2 class="agent-name"><%= agent['name'] %></h2>
+        </button>
+        <div class="collapse collapse-horizontal" id="collapseExample<%= agent['id'] %>" data-parent="#myGroup">
+            <div class="card card-body">
+                <img src="<%= agent['full_portrait'] %>" alt="">
+                <div class="agent-profile">
+                    <p class="role-title">// Role</p> <br>
+                    <p class="role-name"><%= agent['role'] %></p><br>
+                    <p class="desc-title">// Biography</p> <br>
+                    <p class="desc"><%= agent['description'] %></p>
+                    <audio src="<%= agent['voiceline'] %>" controls>
+                    Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </div>
+        </div>
     <% end %>
     
 <% end %>
