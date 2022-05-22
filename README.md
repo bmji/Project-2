@@ -20,7 +20,7 @@ During this project, I had so many ideas going through my head that it was very 
 
 I also had a hard time managing the data that came from the external API for my project theme. There was so much data to handle and being able to find methods to grab specific data was very time consuming and stressful. It didn't help that the data would be nested in hashes within hashes.
 
-<a href="https://valorant-api.com/v1/agents">API I used for this project</a>
+<a href="https://valorant-api.com/v1/agents" target="_blank" rel="noopener noreferrer">API I used for this project</a>
 
 ## Unsolved Issues
 From my perspective, I don't believe that there are any issues but this project is not 100% complete. I believe that my struggle of having too many ideas resulted in this outcome as the feature I wanted to implement (listing out the abilities for each agent) is not yet implemented into this project. Linking the data from the API to the database used in the project took so much of my time that I was not able to display the information into my app. If I had done so, I believe I would have gone over the allocated time period to complete this project. 
@@ -35,4 +35,4 @@ Similar to my Tic Tac Toe project, I again utilised bootstrap as my main feature
 Feel free to go through my CRUD app and see the end result :)
 
 You can access my CRUD app here:
-<a href="https://whispering-hollows-57896.herokuapp.com/">Click here</a>
+<a href="https://whispering-hollows-57896.herokuapp.com/" target="_blank" rel="noopener noreferrer">Click here</a>
