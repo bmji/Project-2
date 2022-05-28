@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/valorant');
+@import url('https://fonts.cdnfonts.com/css/valorant');
 @import url('//db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold');
 @import url('//db.onlinewebfonts.com/c/b621d1ffb46493164fd62fb7a83ab0ff?family=MarkW05-Medium');
 @import url('//db.onlinewebfonts.com/c/7bb508fd7255ec38b6f29cb4cf8668cf?family=DINNextW1G-Regular');
@@ -28,7 +28,7 @@ img {
     padding: 10px 10px;
     background-color: transparent;
     color: #fff;
-    font-family: "DINNextW1G-Regular"; src: url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot"); src: url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff") format("woff"), url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.svg#DINNextW1G-Regular") format("svg");
+    font-family: "DINNextW1G-Regular";
 }
 
 .role-title, .desc-title{
@@ -37,7 +37,7 @@ img {
 }
 
 .role-name {
-    font-family: "Tungsten Bold"; src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot"); src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff") format("woff"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold") format("svg");
+    font-family: "Tungsten Bold";
     text-transform: uppercase;
     font-size: 55px;
 }
@@ -89,7 +89,7 @@ img {
 }
 
 .agent-name {
-    font-family: "Tungsten Bold"; src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot"); src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff") format("woff"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold") format("svg");
+    font-family: "Tungsten Bold";
     text-transform: uppercase;
     font-size: 75px;
 }
@@ -101,7 +101,7 @@ img {
 }
 
 .other-title {
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     text-transform: uppercase;
     font-size: 15px;
     line-height: 10px;
@@ -134,7 +134,7 @@ img {
     border-radius: 8px;
     text-decoration: none;
     color: #111111;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     margin-right: 13px;
     text-transform: uppercase;
     font-size: 13px;
@@ -146,7 +146,7 @@ img {
     border-radius: 8px;
     text-decoration: none;
     color: #111111;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     margin-right: 13px;
     text-transform: uppercase;
     font-size: 13px;
@@ -166,7 +166,7 @@ img {
 .sign-up-title {
     text-align: center;
     padding: 50px 0 50px 0;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     letter-spacing: -1px;
     font-weight: bold;
 }
@@ -211,12 +211,12 @@ input {
 
 input[type="text"]  {
     font-size: 16px;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     font-weight: bold;
 }
 
 label {
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     text-transform: uppercase;
     font-size: 11px;
     margin-left: 5px;
@@ -232,7 +232,7 @@ label {
 .sign-in-title {
     text-align: center;
     padding: 50px 0 50px 0;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     letter-spacing: -1px;
     font-weight: bold;
 }
@@ -302,7 +302,7 @@ label {
 .agent-note-title {
     padding: 28px 0 0;
     text-align: center;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     letter-spacing: -1px;
     font-weight: bold;
 }
@@ -313,7 +313,7 @@ textarea {
     border: 2px solid #ebebeb57;
     border-radius: 5px;
     font-size: 16px;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     font-weight: bold;
     width: 455px;
     margin-bottom: 15px;
@@ -411,7 +411,7 @@ textarea {
 }
 
 .t-text {
-    font-family: "Tungsten Bold"; src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot"); src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff") format("woff"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold") format("svg");
+    font-family: "Tungsten Bold";
     text-transform: uppercase;
     font-size: 55px;
 }
@@ -437,7 +437,7 @@ textarea {
     border-radius: 8px;
     text-decoration: none;
     color: #111111;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     margin-right: 13px;
     text-transform: uppercase;
     font-size: 13px;
@@ -458,7 +458,7 @@ textarea {
 }
 
 .user-log {
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     font-size: 14px;
     margin-right: 19px;
     color: white;
@@ -536,7 +536,7 @@ textarea {
 .edit-note-title {
     padding: 28px 0 0;
     text-align: center;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     letter-spacing: -1px;
     font-weight: bold;
 }
@@ -551,14 +551,14 @@ textarea {
 .wrong-deets {
     text-align: center;
     padding: 50px 0 50px 0;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     letter-spacing: -1px;
     font-weight: bold;
 }
 
 .wrong-deets-msg {
     text-align: center;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     margin-bottom: 30px;
 }
 
@@ -567,7 +567,7 @@ textarea {
     transition: 0.7s;
 }
 .false-session-container .wrong-sign-button {
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     padding: 6px 14px;
     font-size: 15px;
     text-decoration: none;
@@ -578,7 +578,7 @@ textarea {
 }
 
 .false-session-container .bth-button {
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     padding: 6px 14px;
     font-size: 15px;
     text-decoration: none;
@@ -590,7 +590,7 @@ textarea {
 
 .make-account-msg {
     text-align: center;
-    font-family: "MarkW05-Medium"; src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot"); src: url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#MarkW05-Medium") format("svg");
+    font-family: "MarkW05-Medium";
     margin-top: 50px;
     margin-bottom: 30px;
 }
